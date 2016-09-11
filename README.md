@@ -1,5 +1,11 @@
 # TextureClassificationKMeans
 #Classifying Textured Areas using Law filters and K-Means segmentation
+Level – Wave , Level – Ripple , Edge – Level , Spot – Wave ,Wave -Edge  - (Determined this combination based on a BF method, where I go over all possible combinations – 25C5 – around 53000 , and find the combination of masks that will give me the most balanced quadrants  create a Histogram of the clustered image /or best labels, then find a least squared error of the 4-bin counts. 
+#
+(binCount1 – 0.25)^2 + (binCount2 – 0.25)^2 + (binCount3 – 0.25)^2 + (binCount4 – 0.25)^2 = sum
+#
+I am minimizing the sum , and find the combination that gives the min value.
+
 
 #Input Image:
 
